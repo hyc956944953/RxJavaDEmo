@@ -144,10 +144,12 @@ public class MainActivity extends Activity {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
             while ((line = bufferedReader.readLine()) != null) {
                 stringBuilder.append(line);
+
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
         return stringBuilder.toString();
     }
+//增加一行注释
 }

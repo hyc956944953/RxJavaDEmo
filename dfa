@@ -1,0 +1,28 @@
+[1mdiff --git a/app/src/main/java/hyc/com/rxjavademo/MainActivity.java b/app/src/main/java/hyc/com/rxjavademo/MainActivity.java[m
+[1mindex 41584f6..23a7c2e 100644[m
+[1m--- a/app/src/main/java/hyc/com/rxjavademo/MainActivity.java[m
+[1m+++ b/app/src/main/java/hyc/com/rxjavademo/MainActivity.java[m
+[36m@@ -131,7 +131,7 @@[m [mpublic class MainActivity extends Activity {[m
+ [m
+     public String getJsonString(String urlString) {[m
+ [m
+[31m-        URL url = null;[m
+[32m+[m[32m//        URL url = null;[m
+         try {[m
+             url = new URL(urlString);[m
+         } catch (MalformedURLException e) {[m
+[36m@@ -144,10 +144,14 @@[m [mpublic class MainActivity extends Activity {[m
+             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));[m
+             while ((line = bufferedReader.readLine()) != null) {[m
+                 stringBuilder.append(line);[m
+[32m+[m
+             }[m
+         } catch (IOException e) {[m
+             e.printStackTrace();[m
+         }[m
+         return stringBuilder.toString();[m
+     }[m
+[32m+[m[32m/*[m
+[32m+[m[32m*[m
+[32m+[m[32m* */[m
+ }[m
